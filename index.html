@@ -8,9 +8,9 @@
     <link rel="shortcut icon" href="favicon.ico?v=1" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/style.min.css?v=7" />
     <script type="text/javascript" src="js/script.min.js?v=21"></script>
-    <script type="text/javascript" src="js/common.min.js?v=73"></script>
+    <script type="text/javascript" src="js/common.min.js?v=74"></script>
     <link rel="stylesheet" type="text/css" href="css/food.min.css?v=71" />
-    <script type="text/javascript" src="js/food.min.js?v=225"></script>
+    <script type="text/javascript" src="js/food.min.js?v=226"></script>
     <link rel="stylesheet" type="text/css" href="css/image.css?v=173" />
     <script>
         $(function () {
@@ -930,8 +930,17 @@
                                     <optgroup label="支线任务"></optgroup>
                                 </select>
                             </div>
+                            <div class="select-wrapper" id="history-sub-rule-wrapper" style="display:none;">
+                                <select id="select-history-sub-rule" data-width="200px"
+                                    data-dropdown-align-right='auto'
+                                    data-none-selected-text='选择具体规则'>
+                                </select>
+                            </div>
                             <button id="btn-cal-rule-load" class="btn btn-danger" type="button">
                                 加载
+                            </button>
+                            <button id="btn-cal-history" class="btn btn-info" type="button">
+                                历史计算器
                             </button>
                             <div class="btn-group cal-menu hidden" data-toggle="buttons">
                                 <label class="btn btn-default">
@@ -1803,17 +1812,17 @@
                             <div>
                                 <div class="input-group">
                                     <div class="input-group-addon">菜类售价</div>
-                                    <input type="number" class="form-control" id="input-cal-activity-vegetable-price">
+                                    <input type="number" class="form-control" id="input-cal-activity-vegetable-price" aria-label="蔬菜售价">
                                     <div class="input-group-addon">%</div>
                                 </div>
                                 <div class="input-group">
                                     <div class="input-group-addon">面类售价</div>
-                                    <input type="number" class="form-control" id="input-cal-activity-creation-price">
+                                    <input type="number" class="form-control" id="input-cal-activity-creation-price" aria-label="面类售价">
                                     <div class="input-group-addon">%</div>
                                 </div>
                                 <div class="input-group">
                                     <div class="input-group-addon">鱼类售价</div>
-                                    <input type="number" class="form-control" id="input-cal-activity-fish-price">
+                                    <input type="number" class="form-control" id="input-cal-activity-fish-price" aria-label="鱼类售价">
                                     <div class="input-group-addon">%</div>
                                 </div>
                                 <div class="input-group">
