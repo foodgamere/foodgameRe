@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/script.min.js?v=21"></script>
     <script type="text/javascript" src="js/common.min.js?v=75"></script>
     <link rel="stylesheet" type="text/css" href="css/food.min.css?v=73" />
-    <script type="text/javascript" src="js/food.min.js?v=232"></script>
+    <script type="text/javascript" src="js/food.min.js?v=233"></script>
     <link rel="stylesheet" type="text/css" href="css/image.css?v=173" />
     <script>
         $(function () {
@@ -428,15 +428,15 @@
                                     <option value='5' selected>技法</option>
                                     <option value='11' selected>技能</option>
                                     <option value='12' selected>采集</option>
-                                    <option value='16'>性别</option>
-                                    <option value='17'>调料</option>
-                                    <option value='23'>来源</option>
-                                    <option value='25' data-subtext="个人数据, 该列点击可编辑, 用来记录你该厨师佩戴的遗玉">遗玉</option>
-                                    <option value='26' data-subtext="个人数据, 该列点击可编辑, 用来记录你该厨师佩戴的厨具">厨具</option>
-                                    <option value='27'>修炼任务</option>
-                                    <option value='28' selected>修炼技能</option>
-                                    <option value='29' data-subtext="个人数据, 该列点击可编辑, 用来记录你是否已修炼该厨师">已修炼</option>
-                                    <option value='30' data-subtext="个人数据, 该列点击可编辑, 用来记录你是否已拥有该厨师">已有</option>
+                                    <option value='17'>性别</option>
+                                    <option value='18'>调料</option>
+                                    <option value='24'>来源</option>
+                                    <option value='26' data-subtext="个人数据, 该列点击可编辑, 用来记录你该厨师佩戴的遗玉">遗玉</option>
+                                    <option value='27' data-subtext="个人数据, 该列点击可编辑, 用来记录你该厨师佩戴的厨具">厨具</option>
+                                    <option value='28'>修炼任务</option>
+                                    <option value='29' selected>修炼技能</option>
+                                    <option value='30' data-subtext="个人数据, 该列点击可编辑, 用来记录你是否已修炼该厨师">已修炼</option>
+                                    <option value='31' data-subtext="个人数据, 该列点击可编辑, 用来记录你是否已拥有该厨师">已有</option>
                                 </select>
                             </div>
                             <div class="inline-wrapper" data-toggle="tooltip" title="是否使用厨具加成">
@@ -575,6 +575,18 @@
                                         同时
                                     </label>
                                 </span>
+                            </div>
+                            <div class="inline-wrapper select-wrapper" data-toggle="tooltip" title="选择采集类型组合">
+                                <select id="chk-chef-material-combo" class="selectpicker monitor-none"
+                                    data-width="110px" data-dropdown-align-right='auto' 
+                                    data-none-selected-text="采集类型">
+                                    <option value="meat_creation">肉+面</option>
+                                    <option value="meat_veg">肉+菜</option>
+                                    <option value="meat_fish">肉+鱼</option>
+                                    <option value="creation_veg">面+菜</option>
+                                    <option value="creation_fish">面+鱼</option>
+                                    <option value="veg_fish">菜+鱼</option>
+                                </select>
                             </div>
                             <div class="inline-wrapper select-wrapper" data-toggle="tooltip" title="选择遗玉,过滤厨师">
                                 <select id="chk-chef-amber" multiple class="monitor-none" data-width="100px"
@@ -1455,6 +1467,7 @@
                                 <th>面</th>
                                 <th>菜</th>
                                 <th>鱼</th>
+                                <th>采集类型</th>
                                 <th>性别</th>
                                 <th>甜</th>
                                 <th>酸</th>
