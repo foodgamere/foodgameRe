@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/script.min.js?v=21"></script>
     <script type="text/javascript" src="js/common.min.js?v=75"></script>
     <link rel="stylesheet" type="text/css" href="css/food.min.css?v=73" />
-    <script type="text/javascript" src="js/food.min.js?v=233"></script>
+    <script type="text/javascript" src="js/food.min.js?v=234"></script>
     <link rel="stylesheet" type="text/css" href="css/image.css?v=173" />
     <script>
         $(function () {
@@ -578,8 +578,11 @@
                             </div>
                             <div class="inline-wrapper select-wrapper" data-toggle="tooltip" title="选择采集类型组合">
                                 <select id="chk-chef-material-combo" class="selectpicker monitor-none"
-                                    data-width="110px" data-dropdown-align-right='auto' 
-                                    data-none-selected-text="采集类型">
+                                    data-width="130px" data-dropdown-align-right='auto' 
+                                    data-none-selected-text="选择采集组合"
+                                    data-actions-box="true" data-actions-box-only-clear="true"
+                                    data-deselect-all-text="清空">
+                                    <option value="" selected class="hidden"></option>
                                     <option value="meat_creation">肉+面</option>
                                     <option value="meat_veg">肉+菜</option>
                                     <option value="meat_fish">肉+鱼</option>
