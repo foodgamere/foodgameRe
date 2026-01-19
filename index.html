@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/script.min.js?v=21"></script>
     <script type="text/javascript" src="js/common.min.js?v=75"></script>
     <link rel="stylesheet" type="text/css" href="css/food.min.css?v=73" />
-    <script type="text/javascript" src="js/food.min.js?v=236"></script>
+    <script type="text/javascript" src="js/food.min.js?v=237"></script>
     <link rel="stylesheet" type="text/css" href="css/image.css?v=173" />
     <script>
         $(function () {
@@ -443,7 +443,7 @@
                                 <input type="checkbox" id="chk-chef-apply-ambers" data-toggle="toggle" data-on="遗玉加成开"
                                     data-off="遗玉加成关" data-onstyle="default" data-width="105px" checked>
                             </div>
-                            <div class="inline-wrapper select-wrapper chef-apply-ambers" data-toggle="tooltip" title="批量应用遗玉（每种颜色最多1个，总共最多3个）">
+                            <div class="inline-wrapper select-wrapper chef-apply-ambers" data-toggle="tooltip" title="批量应用遗玉(最多设置三种,清空则使用厨师自身遗玉)">
                                 <select id="chk-chef-apply-amber-select" multiple class="selectpicker monitor-none"
                                     data-width="150px" data-dropdown-align-right='auto' 
                                     data-none-selected-text="批量应用遗玉"
@@ -457,7 +457,7 @@
                                     data-deselect-all-text="清空">
                                 </select>
                             </div>
-                            <label class="btn btn-default chef-apply-ambers" data-toggle="tooltip" title="将所有厨师心法盘设置为满级">
+                            <label class="btn btn-default chef-apply-ambers" data-toggle="tooltip" title="将所有厨师心法盘设置为满级(不勾选为使用厨师自身等级)">
                                 <input type="checkbox" id="chk-chef-max-disk-level" class="monitor-none">
                                 <i class="fa fa-check glyphicon glyphicon-ok"></i>
                                 默认满级心法盘
@@ -466,10 +466,10 @@
                                 <input type="checkbox" id="chk-chef-apply-equips" data-toggle="toggle" data-on="厨具加成开"
                                     data-off="厨具加成关" data-onstyle="default" data-width="105px" checked>
                             </div>
-                            <div class="inline-wrapper select-wrapper chef-apply-equips" data-toggle="tooltip" title="选择应用厨具">
+                            <div class="inline-wrapper select-wrapper chef-apply-equips" data-toggle="tooltip" title="为所有厨师设置厨具(清空则使用厨师自身厨具)">
                                 <select id="chk-chef-apply-equip-select" class="selectpicker monitor-none"
                                     data-width="130px" data-dropdown-align-right='auto' 
-                                    data-none-selected-text="应用厨具"
+                                    data-none-selected-text="批量应用厨具"
                                     data-live-search="true" data-live-search-placeholder="查找"
                                     data-none-results-text="没有找到"
                                     data-actions-box="true" data-actions-box-only-clear="true"
